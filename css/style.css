@@ -67,10 +67,17 @@ header .toggle-btn {
 
 .navigation ul li a {
   display: block;
-  padding: .5em 1em;
+  padding: 1em 1em;
   text-align: center;
+  font-size: 1.5em;
   border-bottom: 1px solid #ccc;
   text-decoration: none;
+  background-color: #00515c;
+  color: #B38235;
+}
+
+.navigation ul li a:hover {
+  color: #fcfbb8;
 }
 
 .navigation ul li:first-child a {
@@ -79,7 +86,7 @@ header .toggle-btn {
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #B38235;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -88,10 +95,10 @@ header .toggle-btn {
 .toggle-btn:before,
 .close-btn:before {
   border: 1px solid #ccc;
+  display: inline-block;
   padding: 13px 11px;
   height: 40px;
   width: 40px;
-  display: inline-block;
 }
 
 .toggle-btn span,
@@ -150,6 +157,20 @@ header .toggle-btn {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  li {
+    display: inline-block;
+    float: right;
+  }
+  .navigation ul {
+    background-color: #00515c;
+    overflow: hidden;
+  }
+  .navigation ul li a {
+    border: 0;
+  }
+  .navigation ul li:first-child a {
+    border: 0;
   }
 }
 
